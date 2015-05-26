@@ -1,0 +1,15 @@
+# Template file for 'netatalk2'
+pkgname=netatalk2
+version=2.2.4
+revision=1
+build_style=gnu-configure
+configure_args="--enable-ddp --enable-a2boot --enable-timelord --enable-pgp-uam"
+short_desc="Netatalk v2 for legacy AppleTalk sharing."
+maintainer="Brian Holdsworth <brian.holdsworth@gmail.com>"
+license="BSD"
+homepage="http://netcat.sourceforge.net/"
+distfiles="https://github.com/BrianHoldsworth/${pkgname}/archive/master.zip>${pkgname}-${version}.zip"
+wrksrc=${pkgname}-master
+hostmakedepends="db-devel libgcrypt-devel"
+checksum=4aabc928d53591bae1b92369f403d891e4d6fd0dea3fa8a4f51afd597d20ed2d
+
